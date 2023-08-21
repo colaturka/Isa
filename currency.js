@@ -1,6 +1,6 @@
 import currencyapi from '@everapi/currencyapi-js';
 
-const client = new currencyapi('YOUR-API-KEY');
+const client = new currencyapi('cur_live_QY6JOVe8TkPSnVRQpC0vQS68znhb5ub6puf775kN');
 
 document.getElementById('conversion-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting the traditional way
