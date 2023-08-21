@@ -10,7 +10,7 @@ document.getElementById('conversion-form').addEventListener('submit', function(e
 
 function convertCurrency(fromCurrency, toCurrency, amount) {
     const API_KEY = '632da9956e4e713fb309f7a0dd0ead1b';
-    const API_URL = 'http://data.fixer.io/api/convert';
+    const API_URL = 'https://data.fixer.io/api/convert';
 
     const params = new URLSearchParams({
         access_key: API_KEY,
