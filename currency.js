@@ -10,7 +10,7 @@ document.getElementById('conversion-form').addEventListener('submit', function(e
 
 function convertCurrency(amount, fromCurrency, toCurrency) {
     const API_KEY = 'cur_live_QY6JOVe8TkPSnVRQpC0vQS68znhb5ub6puf775kN';
-    const API_URL = `https://api.currencyapi.com/v3/convert?value=12 \`; // Replace with the actual API endpoint URL
+    const API_URL = 'https://api.currencyapi.com/v3/convert'; // Remove the backslash and space character
 
     const url = `${API_URL}?value=${amount}&base_currency=${fromCurrency}&currencies=${toCurrency}&apiKey=${API_KEY}`;
 
