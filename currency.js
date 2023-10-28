@@ -1,4 +1,4 @@
-
+import CurrencyAPI from './index.js';
 
 document.getElementById('conversion-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting the traditional way
