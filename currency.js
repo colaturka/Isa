@@ -16,9 +16,10 @@ document.getElementById('conversion-form').addEventListener('submit', function(e
         let resultHTML = '';
 
             for (let currency of currencies) {
-            resultHTML += `<div class="flex items-center justify-between py-2">
-                <strong>${currency}:</strong>
-                <span>${response.data[currency].value}</span>
+            // Inline CSS styling for currency display
+            resultHTML += `<div style="margin-bottom: 10px;" class="currency-item">
+                <strong style="margin-right: 5px; font-weight: bold;">${currency}:</strong>
+                <span style="font-weight: normal;">${response.data[currency].value}</span>
             </div>`;
         }
     latestRatesDisplay.innerHTML = resultHTML;
