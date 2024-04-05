@@ -7,10 +7,11 @@ document.getElementById('conversion-form').addEventListener('submit', function(e
     const fromCurrency = document.getElementById('from').value;
     const toCurrency = document.getElementById('to').value;
     const currencyApi = new CurrencyAPI('cur_live_QY6JOVe8TkPSnVRQpC0vQS68znhb5ub6puf775kN');
+    const latestRatesDisplay = document.getElementById('latest_rates_display'); // Define latestRatesDisplay
     
     currencyApi.latest({
-        base_currency:fromCurrency;
-        currencies:toCurrency;
+        base_currency:fromCurrency,
+        currencies:toCurrency
     }).then(response => {
         let currencies = Object.keys(response.data);
         let resultHTML = '';
