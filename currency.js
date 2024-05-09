@@ -20,7 +20,7 @@ document.getElementById('conversion-form').addEventListener('submit', function(e
             // Inline CSS styling for currency display
             resultHTML += `<div style="margin-bottom: 10px;" class="currency-item">
                 <strong style="margin-right: 5px; font-weight: bold;">${currency}:</strong>
-                <span style="font-weight: normal;">${response.data[currency].value}</span>
+                <span style="font-weight: normal;">${response.data[currency].value * amount}</span>
             </div>`;
         }
     latestRatesDisplay.innerHTML = resultHTML;
