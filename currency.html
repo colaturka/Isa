@@ -4,30 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="currency.css"/> 
+    <link rel="stylesheet" href="currency.css" />
     <title>Currency Converter</title>
   </head>
   <body>
+<div class="container">
+    <h1>Currency Converter</h1>
+    
 	<form id ="conversion-form">
-        <label for="value1">Currency amount desired to be converted</label>
-        <input type="number" id="value1" name="value1" placeholder="Amount">
+        <div class="amount">
+            <label for="value1">Currency amount desired to be converted:</label>
+            <input type="number" id="value1" name="value1" placeholder="Amount">
+        </div>
+
+        <label>From: </label>
 	<select id="from" name="from" placeholder="select currency">
 	 <option value="USD">USD - United States Dollar</option>
   	<option value="EUR">EUR - Euro</option>
   	<option value="GBP">GBP - British Pound Sterling</option>
 	</select>
 
-		
-	<select id="to" name="to" placeholder="select currency">
-	 <option value="USD">USD - United States Dollar</option>
-  	<option value="EUR">EUR - Euro</option>
-  	<option value="GBP">GBP - British Pound Sterling</option>
-	</select>
+
+    <div class="to_box">
+        <label for="to">To: </label>	
+        <select id="to" name="to" placeholder="select currency">
+        <option value="USD">USD - United States Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="GBP">GBP - British Pound Sterling</option>
+        </select>
+    </div>
+    <div class="submit">
         <button type="submit">Convert</button>
+    </div>
+
 
     </form>
-	     <div id="latest_rates_display"></div>
-    <p id="result">bruhh</p>
+	     <div id="latest_rates_display">
+
+         </div>
+
+</div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="index.js"></script>
     <script type="module" src="currency.js"></script>
