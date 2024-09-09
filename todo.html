@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css"/>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/add.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>To Do list</h1>
+    </header>
+    <form action="">
+        <input type="text" id="input">
+        <button class="todo-button" type="button" onclick="addTask()"><i class="gg-add"></i></button>
+        <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">completed</option>
+            <option value="">incomplete</option>
+        </select>
+    </form>
+    <ul id="tasks"></ul>
+
+    <script type="text/javascript" src="todo.js"></script>
+</body>
+</html>

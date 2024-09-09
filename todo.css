@@ -1,0 +1,83 @@
+body{
+    background-color:  #272343;
+}
+
+.edit-btn:hover{
+    color:blue;
+}
+.edit-btn{
+    margin-left:20px;
+}
+
+.delete-btn{
+    margin-left:10px;
+}
+
+li:hover{
+
+background-color: beige;
+
+}
+
+li{
+    height:40px;
+    list-style-type: none;
+    text-align: center;
+    width:25%;
+    margin:auto;
+    background-color: #ffffff;
+    border-radius:12px;
+    border-bottom: 5px solid black;
+}
+.checked{
+    text-decoration:line-through;
+}
+
+.task{
+display: flex;
+justify-content: flex-end;
+ 
+
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+h1{
+    display:flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: system-ui, sans-serif;
+font-weight:500;
+}
+
+#input{
+    background-color:#e3f6f5;
+    margin-right:15px;
+    border-radius: 2rem;
+    height:25px;
+    border:none;
+}
+.todo-button{
+    margin-right:15px;
+    background-color:#e3f6f5;
+    border-radius: 50%;
+    height:20px;
+    border:none;
+    font-family: system-ui, sans-serif;
+    font-weight:400;
+    font-size:x-large;
+    padding:0 0;
+}
+
+.filter-todo{
+    background-color:#e3f6f5;
+    border-radius: 5px;
+    height:25px;
+}
+span{
+    font-size: 30px;
+}
